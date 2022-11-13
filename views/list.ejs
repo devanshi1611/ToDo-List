@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="main">
+
+        <% if(listTitle=="Saturday" || listTitle=="Saturday" ){ %>
+            <h1 style="color: #001253;">
+                <%= listTitle %> ToDo List
+            </h1>
+        <% } else { %>
+            <h1 style="color: #0E5E6F;"> <%= listTitle %> ToDo List</h1>
+        <% } %>
+
+        <p>Date : <%= fullDate %></p>
+        <div class="list">
+            <% for(var i=0; i<newListItems.length; i++) { %>
+                <input type="checkbox" name="checkbox"> <%= newListItems[i] %> <br>
+            <% } %>
+        </div>
+    
+        <form action="/" method="post">
+            <br><input ty="text" name="newItem">
+            <button type="submit" name="button">Add</button>             
+        </form>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.main {
+    background-color: #A0E4CB;
+    width: 250px;
+    height: max-content;
+    padding: 30px;
+    text-align: center;
+    margin: 30px 50px;
+}
+.list{
+    text-align: left;
+    padding: 0 30px;
+}
